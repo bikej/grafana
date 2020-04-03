@@ -21,7 +21,7 @@ RUN yum install -y --nogpgcheck \
 
 RUN mkdir -p $GOPATH/src/github.com/grafana && \
     cd $GOPATH/src/github.com/grafana && pwd && \
-    git clone https://github.com/bikej/grafana-test.git && \
+    git clone https://github.com/bikej/grafana.git && \
     cd grafana && pwd && git branch -a && \
     git checkout OAuth;
 
