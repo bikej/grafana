@@ -5,7 +5,7 @@ MAINTAINER Eldad Marciano "mrsiano@gmail.com"
 ENV GOPATH /root/go
 
 
-RUN curl --silent --location https://rpm.nodesource.com/setup_7.x | bash -
+RUN curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
 
 RUN yum install -y --nogpgcheck \
     initscripts \
