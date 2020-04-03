@@ -24,7 +24,7 @@ RUN mkdir -p $GOPATH/src/github.com/grafana && \
     cd $GOPATH/src/github.com/grafana && pwd && \
     git clone https://github.com/bikej/grafana.git && \
     cd grafana && pwd && git branch -a && \
-    git checkout generic_oauth;
+    git checkout oauth;
 
 RUN cd $GOPATH/src/github.com/grafana/grafana && \
     go run build.go setup && \
